@@ -22,3 +22,8 @@ print('--------------------------------')
 for i in range(0, 10, 2):
     print(i)
 print('--------------------------------')
+
+number = ['a', 'b', 'c', 'd', 'e']
+for a, b in enumerate(number):
+    print(a, b)
+
