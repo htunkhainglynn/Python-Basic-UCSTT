@@ -9,9 +9,6 @@ class Alive:
     def talk(self):
         print(f'{self.name}')
 
-    def sleep(self):
-        pass
-
 
 class Animal(Alive):
 
@@ -32,8 +29,8 @@ class Human(Alive):
         super().__init__(name, legs)
         self.sleep_ype = sleep_type
 
-    def talk(self):
-        print(f'{self.name} loves you')
+    def talk(self, times):
+        print(f'{self.name} loves you {times}')
 
     def sleep(self):
         print(f'{self.name} sleeps like {self.sleep_ype}')
@@ -43,12 +40,12 @@ alien = Alive('Groot', 2)
 alien.talk()
 alien.legs_count()
 
-human = Human('KoKo', 2, 'KhawKhaw')
-human.talk()
-human.legs_count()
-human.sleep()
-
 dog = Animal('Bob', 4, 'Zzzz')
 dog.talk()
 dog.legs_count()
 dog.sleep()
+
+human = Human('KoKo', 2, 'KhawKhaw')
+human.talk(3000)
+human.legs_count()
+human.sleep()
