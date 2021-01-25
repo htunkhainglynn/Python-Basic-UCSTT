@@ -4,11 +4,15 @@ student = {
     'is_boy': True
 }
 
-student['birthday'] = 'Jan 8 2001'
+student['name'] = 'Ma Ma'
 
 print(student)
 
 print(student.get('name'))
+
+
+a = {'name':[0, 1, 2, 3, 4]}
+print(a['name'][3])
 
 #######################################
 
