@@ -1,6 +1,11 @@
 num1 = input('Enter number 1: ')
 num2 = input('Enter number 2: ')
-operator = input('*****\n'
+
+try:
+    num1 = int(num1)
+    num2 = int(num2)
+
+    operator = input('*****\n'
                   'Enter + to add\n'
                   'Enter - to sub\n'
                   'Enter * to multiply\n'
@@ -8,9 +13,6 @@ operator = input('*****\n'
                   'Enter % to find remainder\n'
                   '*****\n'
                   )
-try:
-    num1 = int(num1)
-    num2 = int(num2)
 
     if operator == '+':
         print((num1 + num2))

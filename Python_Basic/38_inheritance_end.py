@@ -14,26 +14,26 @@ class Animal(Alive):
 
     def __init__(self, name, legs, sleep_type):
         super().__init__(name, legs)
-        self.sleep_ype = sleep_type
+        self.sleep_type = sleep_type
 
     def talk(self):
         print(f'{self.name} meows you')
 
     def sleep(self):
-        print(f'{self.name} sleeps like {self.sleep_ype}')
+        print(f'{self.name} sleeps like {self.sleep_type}')
 
 
 class Human(Alive):
 
     def __init__(self, name, legs, sleep_type):
         super().__init__(name, legs)
-        self.sleep_ype = sleep_type
+        self.sleep_type = sleep_type
 
     def talk(self, times):
         print(f'{self.name} loves you {times}')
 
     def sleep(self):
-        print(f'{self.name} sleeps like {self.sleep_ype}')
+        print(f'{self.name} sleeps like {self.sleep_type}')
 
 
 alien = Alive('Groot', 2)
